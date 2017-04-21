@@ -1,4 +1,4 @@
-# NosDB [2.0] sample applications
+# NosDB sample applications
 
 ### Table of contents
 
