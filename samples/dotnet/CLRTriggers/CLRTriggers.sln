@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLRTriggersUsage", "CLRTriggersUsage\CLRTriggersUsage.csproj", "{3A5B9EFB-4A21-40AA-B0F1-26A7433D1CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLRTriggers", "CLRTriggers\CLRTriggers.csproj", "{73E976CC-E96E-460C-870D-2AB20B2ADCA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A5B9EFB-4A21-40AA-B0F1-26A7433D1CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A5B9EFB-4A21-40AA-B0F1-26A7433D1CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A5B9EFB-4A21-40AA-B0F1-26A7433D1CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A5B9EFB-4A21-40AA-B0F1-26A7433D1CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E976CC-E96E-460C-870D-2AB20B2ADCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E976CC-E96E-460C-870D-2AB20B2ADCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E976CC-E96E-460C-870D-2AB20B2ADCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E976CC-E96E-460C-870D-2AB20B2ADCA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

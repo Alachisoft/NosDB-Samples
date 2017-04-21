@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <!-- This xml contains the schema configuration of the northwind database. It is created by using code first approach with Enity framework or Get-DatabaseSchema command in powershell, as NosDB is schema-less and Entity framework is not so this configuration bridges this gap between the two and is used by several different operations such as API, Queries etc.!-->
+<database-mapping xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <source-info connection-string="Data Source=20.200.20.32; Port=9950; Database=Northwind; Integrated Security=false;" />
+  <destination-info connection-string="" />
+  <entity-mapping>
+    <entity collection-name="categories">
+      <column-mapping>
+        <json-field name="CategoryID" is-primary="true" is-identity="false" data-type="int" combining-delimiter="" not-null="true" />
+        <json-field name="CategoryName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Description" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ProductID" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="customers">
+      <column-mapping>
+        <json-field name="CustomerID" is-primary="true" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="true" />
+        <json-field name="CompanyName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ContactName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ContactTitle" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Address" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="City" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="PostalCode" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Country" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Phone" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Fax" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Region" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="employees">
+      <column-mapping>
+        <json-field name="EmployeeID" is-primary="true" is-identity="false" data-type="int" combining-delimiter="" not-null="true" />
+        <json-field name="LastName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="FirstName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Title" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="TitleOfCourtesy" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="BirthDate" is-primary="false" is-identity="false" data-type="datetime" combining-delimiter="" not-null="false" />
+        <json-field name="HireDate" is-primary="false" is-identity="false" data-type="datetime" combining-delimiter="" not-null="false" />
+        <json-field name="Address" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="City" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Region" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="PostalCode" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Country" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="HomePhone" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Extension" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Notes" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ReportsTo" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="PhotoPath" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="orders">
+      <column-mapping>
+        <json-field name="OrderID" is-primary="true" is-identity="false" data-type="int" combining-delimiter="" not-null="true" />
+        <json-field name="OrderDate" is-primary="false" is-identity="false" data-type="datetime" combining-delimiter="" not-null="false" />
+        <json-field name="RequiredDate" is-primary="false" is-identity="false" data-type="datetime" combining-delimiter="" not-null="false" />
+        <json-field name="ShippedDate" is-primary="false" is-identity="false" data-type="datetime" combining-delimiter="" not-null="false" />
+        <json-field name="ShipVia" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="Freight" is-primary="false" is-identity="false" data-type="double" combining-delimiter="" not-null="false" />
+        <json-field name="ShipName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ShipAddress" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ShipCity" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ShipPostalCode" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Shipcountry" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="CustomerID" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="EmployeeID" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="ShipRegion" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="products">
+      <column-mapping>
+        <json-field name="ProductID" is-primary="true" is-identity="false" data-type="int" combining-delimiter="" not-null="true" />
+        <json-field name="ProductName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="QuantityPerUnit" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="UnitPrice" is-primary="false" is-identity="false" data-type="double" combining-delimiter="" not-null="false" />
+        <json-field name="UnitsInStock" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="UnitsOnOrder" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="ReorderLevel" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="Discontinued" is-primary="false" is-identity="false" data-type="bit" combining-delimiter="" not-null="false" />
+        <json-field name="SupplierID" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="shippers">
+      <column-mapping>
+        <json-field name="ShipperID" is-primary="true" is-identity="false" data-type="int" combining-delimiter="" not-null="true" />
+        <json-field name="CompanyName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Phone" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="suppliers">
+      <column-mapping>
+        <json-field name="SupplierID" is-primary="true" is-identity="false" data-type="int" combining-delimiter="" not-null="true" />
+        <json-field name="CompanyName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ContactName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ContactTitle" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Address" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="City" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="PostalCode" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Country" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Phone" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Region" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="HomePage" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="Fax" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="OrderDetails">
+      <column-mapping>
+        <json-field name="OrderID" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="ProductID" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="UnitPrice" is-primary="false" is-identity="false" data-type="double" combining-delimiter="" not-null="false" />
+        <json-field name="Quantity" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="Discount" is-primary="false" is-identity="false" data-type="double" combining-delimiter="" not-null="false" />
+      </column-mapping>
+    </entity>
+    <entity collection-name="Category">
+      <column-mapping>
+        <json-field name="CategoryID" is-primary="false" is-identity="false" data-type="int" combining-delimiter="" not-null="false" />
+        <json-field name="CategoryName" is-primary="false" is-identity="false" data-type="nvarchar(max)" combining-delimiter="" not-null="false" />
+        <json-field name="ProductID" is-primary="true" is-identity="false" data-type="int" combining-delimiter="" not-null="true" />
+      </column-mapping>
+    </entity>
+  </entity-mapping>
+  <relationship-mapping>
+    <relationship name="FK_OrderDetails_orders_OrderID" entity="orders" field="OrderID" type="1:n">
+      <related-entity name="OrderDetails" related-field="OrderID" />
+      <embed-details embeded-field-name="OrderID" embed-reference-field="false" />
+    </relationship>
+    <relationship name="FK_Category_products_ProductID" entity="products" field="ProductID" type="1:1">
+      <related-entity name="Category" related-field="ProductID" />
+      <embed-details embeded-field-name="ProductID" embed-reference-field="false" />
+    </relationship>
+  </relationship-mapping>
+</database-mapping>

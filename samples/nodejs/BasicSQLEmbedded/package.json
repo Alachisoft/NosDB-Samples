@@ -1,0 +1,20 @@
+{
+    "name": "basic-sql-embedded",
+    "version": "1.0.0",
+    "description": "nosdb crud operations with embedded documents sample",
+    "main": "app.js",
+	"scripts": {
+    "start": "node app.js"
+  },
+    "author": {
+        "name": "Alachisoft",
+        "email": "support@alachisoft.com"
+    },
+    "dependencies": {
+        "nosdb": "file:..\\..\\..\\..\\Node.js\\lib\\nosdb-2.0.0.tgz"
+    },
+    "repository": {
+        "private": true
+    },
+    "license": "Apache-2.0"
+}

@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- This xml contains the schema configuration of the MusicStore database. It is created by using code first approach with Enity framework or Get-DatabaseSchema command in powershell, as NosDB is schema-less and Entity framework is not so this configuration bridges this gap between the two and is used by several different operations such as API, Queries etc.!-->
+<database-mapping xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <source-info connection-string="Data Source=20.200.20.10; Database= MusicStore; Initial Catalog=MusicStore;User ID=diyatech; Password = 4Islamabad" />
+  <destination-info connection-string="" />
+  <entity-mapping>
+    <entity collection-name="Orders" table-name="Orders">
+      <column-mapping>
+        <json-field name="OrderDate" is-primary="false" is-identity="false" data-type="DateTime" combining-delimiter="" not-null="true">
+          <mapped-column name="OrderDate" data-type="datetime2" is-primary="false" />
+        </json-field>
+        <json-field name="Total" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="Total" data-type="decimal" is-primary="false" />
+        </json-field>
+        <json-field name="OrderId" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="OrderId" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="Address" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Address" data-type="nvarchar(70)" is-primary="false" />
+        </json-field>
+        <json-field name="City" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="City" data-type="nvarchar(40)" is-primary="false" />
+        </json-field>
+        <json-field name="Country" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Country" data-type="nvarchar(40)" is-primary="false" />
+        </json-field>
+        <json-field name="Email" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Email" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="FirstName" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="FirstName" data-type="nvarchar(160)" is-primary="false" />
+        </json-field>
+        <json-field name="LastName" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="LastName" data-type="nvarchar(160)" is-primary="false" />
+        </json-field>
+        <json-field name="Phone" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Phone" data-type="nvarchar(24)" is-primary="false" />
+        </json-field>
+        <json-field name="PostalCode" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="PostalCode" data-type="nvarchar(10)" is-primary="false" />
+        </json-field>
+        <json-field name="State" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="State" data-type="nvarchar(40)" is-primary="false" />
+        </json-field>
+        <json-field name="Username" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="Username" data-type="nvarchar" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="PK__Orders__C3905BCF0425A276">
+          <field name="OrderId" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="Genres" table-name="Genres">
+      <column-mapping>
+        <json-field name="GenreId" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="GenreId" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="Description" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="Description" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="Name" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Name" data-type="nvarchar" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="PK__Genres__0385057E0CBAE877">
+          <field name="GenreId" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="AspNetUserTokens" table-name="AspNetUserTokens">
+      <column-mapping>
+        <json-field name="LoginProvider" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="LoginProvider" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="Name" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Name" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="UserId" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="UserId" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="Value" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="Value" data-type="nvarchar" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="PK_AspNetUserTokens">
+          <field name="UserId" sort-order="ASC" />
+          <field name="LoginProvider" sort-order="ASC" />
+          <field name="Name" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="AspNetUsers" table-name="AspNetUsers">
+      <column-mapping>
+        <json-field name="EmailConfirmed" is-primary="false" is-identity="false" data-type="Boolean" combining-delimiter="" not-null="true">
+          <mapped-column name="EmailConfirmed" data-type="bit" is-primary="false" />
+        </json-field>
+        <json-field name="LockoutEnabled" is-primary="false" is-identity="false" data-type="Boolean" combining-delimiter="" not-null="true">
+          <mapped-column name="LockoutEnabled" data-type="bit" is-primary="false" />
+        </json-field>
+        <json-field name="PhoneNumberConfirmed" is-primary="false" is-identity="false" data-type="Boolean" combining-delimiter="" not-null="true">
+          <mapped-column name="PhoneNumberConfirmed" data-type="bit" is-primary="false" />
+        </json-field>
+        <json-field name="TwoFactorEnabled" is-primary="false" is-identity="false" data-type="Boolean" combining-delimiter="" not-null="true">
+          <mapped-column name="TwoFactorEnabled" data-type="bit" is-primary="false" />
+        </json-field>
+        <json-field name="LockoutEnd" is-primary="false" is-identity="false" data-type="DateTime" combining-delimiter="" not-null="false">
+          <mapped-column name="LockoutEnd" data-type="datetimeoffset" is-primary="false" />
+        </json-field>
+        <json-field name="AccessFailedCount" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="AccessFailedCount" data-type="int" is-primary="false" />
+        </json-field>
+        <json-field name="ConcurrencyStamp" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="ConcurrencyStamp" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="Email" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="Email" data-type="nvarchar(256)" is-primary="false" />
+        </json-field>
+        <json-field name="Id" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Id" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="NormalizedEmail" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="NormalizedEmail" data-type="nvarchar(256)" is-primary="false" />
+        </json-field>
+        <json-field name="NormalizedUserName" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="NormalizedUserName" data-type="nvarchar(256)" is-primary="false" />
+        </json-field>
+        <json-field name="PasswordHash" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="PasswordHash" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="PhoneNumber" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="PhoneNumber" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="SecurityStamp" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="SecurityStamp" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="UserName" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="UserName" data-type="nvarchar(256)" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="EmailIndex">
+          <field name="NormalizedEmail" sort-order="ASC" />
+        </index>
+        <index name="PK__AspNetUs__3214EC071273C1CD">
+          <field name="Id" sort-order="ASC" />
+        </index>
+        <index name="UserNameIndex">
+          <field name="NormalizedUserName" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="AspNetUserLogins" table-name="AspNetUserLogins">
+      <column-mapping>
+        <json-field name="LoginProvider" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="LoginProvider" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="ProviderDisplayName" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="ProviderDisplayName" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="ProviderKey" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="ProviderKey" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="UserId" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="UserId" data-type="nvarchar(450)" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="IX_AspNetUserLogins_UserId">
+          <field name="UserId" sort-order="ASC" />
+        </index>
+        <index name="PK_AspNetUserLogins">
+          <field name="LoginProvider" sort-order="ASC" />
+          <field name="ProviderKey" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="AspNetUserClaims" table-name="AspNetUserClaims">
+      <column-mapping>
+        <json-field name="Id" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="Id" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="ClaimType" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="ClaimType" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="ClaimValue" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="ClaimValue" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="UserId" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="UserId" data-type="nvarchar(450)" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="IX_AspNetUserClaims_UserId">
+          <field name="UserId" sort-order="ASC" />
+        </index>
+        <index name="PK__AspNetUs__3214EC071BFD2C07">
+          <field name="Id" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="AspNetRoles" table-name="AspNetRoles">
+      <column-mapping>
+        <json-field name="ConcurrencyStamp" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="ConcurrencyStamp" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="Id" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Id" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="Name" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="Name" data-type="nvarchar(256)" is-primary="false" />
+        </json-field>
+        <json-field name="NormalizedName" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="NormalizedName" data-type="nvarchar(256)" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="PK__AspNetRo__3214EC0720C1E124">
+          <field name="Id" sort-order="ASC" />
+        </index>
+        <index name="RoleNameIndex">
+          <field name="NormalizedName" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="AspNetRoleClaims" table-name="AspNetRoleClaims">
+      <column-mapping>
+        <json-field name="Id" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="Id" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="ClaimType" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="ClaimType" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="ClaimValue" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="ClaimValue" data-type="nvarchar" is-primary="false" />
+        </json-field>
+        <json-field name="RoleId" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="RoleId" data-type="nvarchar(450)" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="IX_AspNetRoleClaims_RoleId">
+          <field name="RoleId" sort-order="ASC" />
+        </index>
+        <index name="PK__AspNetRo__3214EC0724927208">
+          <field name="Id" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="Artists" table-name="Artists">
+      <column-mapping>
+        <json-field name="ArtistId" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="ArtistId" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="Name" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Name" data-type="nvarchar" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="PK__Artists__25706B5029572725">
+          <field name="ArtistId" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="Albums" table-name="Albums">
+      <column-mapping>
+        <json-field name="Created" is-primary="false" is-identity="false" data-type="DateTime" combining-delimiter="" not-null="true">
+          <mapped-column name="Created" data-type="datetime2" is-primary="false" />
+        </json-field>
+        <json-field name="Price" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="Price" data-type="decimal" is-primary="false" />
+        </json-field>
+        <json-field name="AlbumId" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="AlbumId" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="ArtistId" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="ArtistId" data-type="int" is-primary="false" />
+        </json-field>
+        <json-field name="GenreId" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="GenreId" data-type="int" is-primary="false" />
+        </json-field>
+        <json-field name="AlbumArtUrl" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="false">
+          <mapped-column name="AlbumArtUrl" data-type="nvarchar(1024)" is-primary="false" />
+        </json-field>
+        <json-field name="Title" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="Title" data-type="nvarchar(160)" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="IX_Albums_ArtistId">
+          <field name="ArtistId" sort-order="ASC" />
+        </index>
+        <index name="IX_Albums_GenreId">
+          <field name="GenreId" sort-order="ASC" />
+        </index>
+        <index name="PK__Albums__97B4BE372D27B809">
+          <field name="AlbumId" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="AspNetUserRoles" table-name="AspNetUserRoles">
+      <column-mapping>
+        <json-field name="RoleId" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="RoleId" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+        <json-field name="UserId" is-primary="true" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="UserId" data-type="nvarchar(450)" is-primary="true" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="IX_AspNetUserRoles_RoleId">
+          <field name="RoleId" sort-order="ASC" />
+        </index>
+        <index name="PK_AspNetUserRoles">
+          <field name="UserId" sort-order="ASC" />
+          <field name="RoleId" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="CartItems" table-name="CartItems">
+      <column-mapping>
+        <json-field name="DateCreated" is-primary="false" is-identity="false" data-type="DateTime" combining-delimiter="" not-null="true">
+          <mapped-column name="DateCreated" data-type="datetime2" is-primary="false" />
+        </json-field>
+        <json-field name="AlbumId" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="AlbumId" data-type="int" is-primary="false" />
+        </json-field>
+        <json-field name="CartItemId" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="CartItemId" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="Count" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="Count" data-type="int" is-primary="false" />
+        </json-field>
+        <json-field name="CartId" is-primary="false" is-identity="false" data-type="String" combining-delimiter="" not-null="true">
+          <mapped-column name="CartId" data-type="nvarchar" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="IX_CartItems_AlbumId">
+          <field name="AlbumId" sort-order="ASC" />
+        </index>
+        <index name="PK__CartItem__488B0B0A36B12243">
+          <field name="CartItemId" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+    <entity collection-name="OrderDetails" table-name="OrderDetails">
+      <column-mapping>
+        <json-field name="UnitPrice" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="UnitPrice" data-type="decimal" is-primary="false" />
+        </json-field>
+        <json-field name="AlbumId" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="AlbumId" data-type="int" is-primary="false" />
+        </json-field>
+        <json-field name="OrderDetailId" is-primary="true" is-identity="true" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="OrderDetailId" data-type="int" is-primary="true" />
+        </json-field>
+        <json-field name="OrderId" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="OrderId" data-type="int" is-primary="false" />
+        </json-field>
+        <json-field name="Quantity" is-primary="false" is-identity="false" data-type="Number" combining-delimiter="" not-null="true">
+          <mapped-column name="Quantity" data-type="int" is-primary="false" />
+        </json-field>
+      </column-mapping>
+      <indices>
+        <index name="IX_OrderDetails_AlbumId">
+          <field name="AlbumId" sort-order="ASC" />
+        </index>
+        <index name="IX_OrderDetails_OrderId">
+          <field name="OrderId" sort-order="ASC" />
+        </index>
+        <index name="PK__OrderDet__D3B9D36C3B75D760">
+          <field name="OrderDetailId" sort-order="ASC" />
+        </index>
+      </indices>
+    </entity>
+  </entity-mapping>
+  <relationship-mapping>
+    <relationship name="FK__AspNetUse__UserI__1920BF5C" entity="AspNetUsers" field="Id" type="1:n">
+      <related-entity name="AspNetUserLogins" related-field="UserId" />
+    </relationship>
+    <relationship name="FK__AspNetUse__UserI__1DE57479" entity="AspNetUsers" field="Id" type="1:n">
+      <related-entity name="AspNetUserClaims" related-field="UserId" />
+    </relationship>
+    <relationship name="FK__AspNetRol__RoleI__267ABA7A" entity="AspNetRoles" field="Id" type="1:n">
+      <related-entity name="AspNetRoleClaims" related-field="RoleId" />
+    </relationship>
+    <relationship name="FK__Albums__ArtistId__300424B4" entity="Artists" field="ArtistId" type="1:n">
+      <related-entity name="Albums" related-field="ArtistId" />
+    </relationship>
+    <relationship name="FK__Albums__GenreId__2F10007B" entity="Genres" field="GenreId" type="1:n">
+      <related-entity name="Albums" related-field="GenreId" />
+    </relationship>
+    <relationship name="FK__AspNetUse__RoleI__32E0915F" entity="AspNetRoles" field="Id" type="1:n">
+      <related-entity name="AspNetUserRoles" related-field="RoleId" />
+    </relationship>
+    <relationship name="FK__AspNetUse__UserI__33D4B598" entity="AspNetUsers" field="Id" type="1:n">
+      <related-entity name="AspNetUserRoles" related-field="UserId" />
+    </relationship>
+    <relationship name="FK__CartItems__Album__38996AB5" entity="Albums" field="AlbumId" type="1:n">
+      <related-entity name="CartItems" related-field="AlbumId" />
+    </relationship>
+    <relationship name="FK__OrderDeta__Album__3D5E1FD2" entity="Albums" field="AlbumId" type="1:n">
+      <related-entity name="OrderDetails" related-field="AlbumId" />
+    </relationship>
+    <relationship name="FK__OrderDeta__Order__3E52440B" entity="Orders" field="OrderId" type="1:n">
+      <related-entity name="OrderDetails" related-field="OrderId" />
+    </relationship>
+  </relationship-mapping>
+</database-mapping>

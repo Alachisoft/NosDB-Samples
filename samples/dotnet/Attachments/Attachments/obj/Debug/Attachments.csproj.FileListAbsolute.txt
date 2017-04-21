@@ -1,0 +1,12 @@
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\Attachments.exe.config
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\Attachments.exe
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\Attachments.pdb
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\Newtonsoft.Json.dll
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\NosDB.Client.dll
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\NosDB.Common.dll
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\NosDB.Samples.EntityObjects.dll
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\NosDB.Distributor.dll
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\bin\Debug\NosDB.Serialization.dll
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\obj\Debug\Attachments.csprojResolveAssemblyReference.cache
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\obj\Debug\Attachments.exe
+C:\Users\abdul_rehman\Desktop\NosDB_Samples_Github\samples\dotnet\Attachments\Attachments\obj\Debug\Attachments.pdb

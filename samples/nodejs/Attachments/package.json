@@ -1,0 +1,20 @@
+{
+    "name": "attachments",
+    "version": "1.0.0",
+    "description": "Attachments",
+    "main": "app.js",
+	"scripts": {
+    "start": "node app.js"
+  },
+    "author": {
+        "name": "Alachisoft",
+        "email": "support@alachisoft.com"
+    },
+    "dependencies": {
+        "nosdb": "file:..\\..\\..\\..\\Node.js\\lib\\nosdb-2.0.0.tgz"
+    },
+    "repository": {
+        "private": true
+    },
+    "license": "Apache-2.0"
+}
