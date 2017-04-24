@@ -17,7 +17,7 @@ CLR Triggers are functions registered against a database operation and are execu
 This sample shows how to create and use a trigger. This sample implements NOT NULL constraint for Product's UnitPrice Attribute.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ## Prerequisites
 

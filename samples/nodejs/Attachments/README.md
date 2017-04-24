@@ -21,7 +21,7 @@ It also demonstrates how to search through the attachments in NosDB, additional 
 This sample uses EntityObjects project as a reference for model class "Employee".
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 Before the sample application is executed make sure that:

@@ -19,7 +19,7 @@ This sample library is a common library used by all samples for domain objects u
 5. Products
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

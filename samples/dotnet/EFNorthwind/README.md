@@ -16,7 +16,7 @@ Entity Framework is a set of technologies in ADO.NET that makes the development 
 This sample application shows how to use EF Core with NosDB. This sample uses Northwind as the database to demonstrate the use of EF.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

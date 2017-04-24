@@ -17,7 +17,7 @@ NosDB provides users with the flexibility to provide their own custom logic to p
 A sample program that demonstrates the usage of CLR Functions. The sample CLR Functions used are defined in **NorthwindFunctions** and **EmployeeInfoProvider** class in CLRFunctions project. 
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

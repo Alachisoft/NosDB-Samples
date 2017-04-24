@@ -15,7 +15,7 @@
 This repository consists on the source code of sample applications that illusturate the NosDB 2.0 API usage in different langauges and runtimes. The code samples were created in Visual Studio and NetBeans.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### About NosDB
 

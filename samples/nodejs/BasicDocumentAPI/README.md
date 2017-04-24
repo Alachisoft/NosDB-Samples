@@ -15,7 +15,7 @@ This sample program demonstrates how to use the NosDB API for performing CRUD op
 It shows how to initialize the database instance and Insert, Get, Update and Delete a document from NosDB.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

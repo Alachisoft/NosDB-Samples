@@ -17,7 +17,7 @@ This readme explains how the provided sample data ([InstallDir]\NoSDB\samples\da
 The provided "NorthWind.ps1" script contains all steps - creating a database, collections and importing the sample northwind data into them. However, the script file should be tweaked and executed according to your requirements as explained in this document:
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 #### Database name options
 

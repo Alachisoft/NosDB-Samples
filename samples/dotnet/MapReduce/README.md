@@ -19,7 +19,7 @@ This sample consists of two projects,
 - MapReduce sample application which demonstrates the MapReduce API to execute a MapReduce task.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

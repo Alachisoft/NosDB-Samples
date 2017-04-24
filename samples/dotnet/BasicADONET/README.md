@@ -17,7 +17,7 @@ This sample program that demonstrates how to access NosDB through ADO.NET Provid
 This program shows how to plug in the NosDB's ADO.NET provider in your application. It shows how to use INSERT, UPDATE, and DELETE statements using ADO.NET ExecuteNonQuery API which in turn communicates with NosDB.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

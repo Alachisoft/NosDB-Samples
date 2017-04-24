@@ -17,7 +17,7 @@ This sample program demonstrates JOINs and Nested Queries in NosDB. This sample 
 This sample uses EntityObjects project as a reference for Northwind model classes.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

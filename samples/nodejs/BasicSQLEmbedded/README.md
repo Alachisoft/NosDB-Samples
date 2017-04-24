@@ -19,7 +19,7 @@ This sample program demonstrates how to perform CRUD operations on a NosDB colle
 This sample uses EntityObjects project as a reference for model class "Product".
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 

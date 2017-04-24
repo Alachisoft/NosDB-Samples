@@ -17,7 +17,7 @@ This sample uses domainobject sample as a reference for model class "Product".
 For Windows: %NOS_HOME% refers to the installation path where NosDB is installed.
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
-> [ZIP file](../../archive/master.zip).
+> [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
 ### Prerequisites
 
