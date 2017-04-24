@@ -10,8 +10,7 @@
 
 ### Introduction
 
-A sample application for using enityframework with music store database
-This sample is a modification of the Microsoft's aspnet MusicStore application
+This is sample application is a modified version of Microsoft's Aspnet MusicStore (https://github.com/aspnet/MusicStore) for using NosDB Enityframework Core provider with "MusicStore" database. 
 
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
 > [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
@@ -22,7 +21,7 @@ Before the sample application is executed make sure that:
 
 - Visual Studio 2015 Tools (Preview 2) is installed. (https://go.microsoft.com/fwlink/?LinkId=827546)
 
-- The nuget package **NosDB.EntityFrameworkCore** -version **1.0.0.0** must be installed to make the solution compilable.	
+- The nuget package **NosDB.EntityFrameworkCore** -version **1&#46;0&#46;0&#46;0** must be installed to make the solution compilable.	
 
 - config.json have been changed according to the configurations.
 	- Change database name in connection string.(optional)

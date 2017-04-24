@@ -26,34 +26,30 @@ NosDB features and tools are designed to be tuned flexibly into applications of 
 
 ### Using the samples
 
-The easiest way to use these samples without using Git is to download the zip file containing the current version (using the following link or by clicking the "Download ZIP" button on the repo page). You can then unzip the entire archive and use the samples in Visual Studio 2015.
+The easiest way to use these samples without using Git is to download the zip file containing the current version (using the following link or by clicking the "Download ZIP" button on the repo page). You can then unzip the entire archive and use the samples in Visual Studio 2015/2017.
 
 [Download the samples ZIP](../../archive/master.zip)
     
-   **Notes:** 
-   * Be sure to unzip the entire archive, and not just individual samples. Some samples depend on the Entity Object/Domain objects sample.   
-   * The DotNet samples are made using Visual Studio 2015. 
+ >   **Note:**  The DotNet samples are made using Visual Studio 2015. 
 
 ### Samples by category
 ##### CRUD (Create, Read, Update and Delete)
 
-|[Attachments .Net](samples/dotnet/Attachments)| [Basic Document API .NET](samples/dotnet/BasicDocumentAPI)| [Basic Document API Async .NET](samples/dotnet/BasicDocumentAPIAsync) |
+[Basic Document API .NET](samples/dotnet/BasicDocumentAPI)| [Basic Document API JAVA](samples/java/BasicDocumentAPI) | [Basic Document API Node.js](samples/nodejs/BasicDocumentAPI)| 
 |---|---|---|
 
-|[__Attachments .Net__](samples/dotnet/Attachments)| [__Basic Document API .NET__](samples/dotnet/BasicDocumentAPI)| [__Basic Document API Async .NET__](samples/dotnet/BasicDocumentAPIAsync) |
+[Basic Document API Async .NET](samples/dotnet/BasicDocumentAPIAsync) |[Attachments .Net](samples/dotnet/Attachments)| [Attachments Node.js](samples/nodejs/Attachments)| 
 |---|---|---|
 
-[__Basic Document API Java__](samples/java/BasicDocumentAPI)|[__Attachments Node.js__](samples/nodejs/Attachments)|[__Basic Documen API Node.js__](samples/nodejs/BasicDocumentAPI)|
-|---|---|---|
 
 ##### Queries
-|[__Basic LINQ .NET__](samples/dotnet/BasicLINQ) | [__Basic SQL Embedded .NET__](samples/dotnet/BasicSQLEmbedded)|[__Basic SQL Normalized .NET__](samples/dotnet/BasicSQLNormalized)
+|[Basic LINQ .NET](samples/dotnet/BasicLINQ) | [Basic SQL Embedded .NET](samples/dotnet/BasicSQLEmbedded)|[Basic SQL Normalized .NET](samples/dotnet/BasicSQLNormalized)
 |---|---|---|
 
-[__Joins Nested Queries .NET__](samples/dotnet/JoinsNestedQueries)|[__Basic SQL Embedded Java__](samples/java/BasicSQLEmbedded)|[__Basic SQL Normalized Java__](samples/java/BasicSQLNormalized)|
+[Joins Nested Queries .NET](samples/dotnet/JoinsNestedQueries)|[Basic SQL Embedded Java](samples/java/BasicSQLEmbedded)|[Basic SQL Normalized Java](samples/java/BasicSQLNormalized)|
 |---|---|---|
 
-|[__Basic SQL Embedded Node.js__](samples/nodejs/BasicSQLEmbedded) | [__Basic SQL Normalized Node.js__](samples/nodejs/BasicSQLNormalized)|
+|[Basic SQL Embedded Node.js](samples/nodejs/BasicSQLEmbedded) | [Basic SQL Normalized Node.js](samples/nodejs/BasicSQLNormalized)|
 |---|---|
 
 
@@ -74,10 +70,10 @@ The easiest way to use these samples without using Git is to download the zip fi
 |[BasicADO .NET](samples/dotnet/BasicADONET)|[Client Side Caching .NET](samples/dotnet/ClientSideCaching)|[CLR Functions .NET](samples/dotnet/CLRFunctions)|
 |---|---|---|
 
-|[__CLR Triggers .NET__](samples/dotnet/CLRTriggers)|[__Entity Objects .NET__](samples/dotnet/EntityObjects)|[__MapReduce .NET__](samples/dotnet/MapReduce)|
+|[CLR Triggers .NET](samples/dotnet/CLRTriggers)|[Entity Objects .NET](samples/dotnet/EntityObjects)|[MapReduce .NET](samples/dotnet/MapReduce)|
 |---|---|---|
 
-|[__SQL Dependency .NET__](samples/dotnet/SQLDependency)|[__Domain Object Java__](samples/java/DomainObject)|
+|[SQL Dependency .NET](samples/dotnet/SQLDependency)|[Domain Object Java](samples/java/DomainObject)|
 |---|---|
 
 ### Additional Resources
