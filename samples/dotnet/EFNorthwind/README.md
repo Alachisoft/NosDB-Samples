@@ -4,7 +4,7 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
-* [Build and run the sample](#Build-and-run-the-sample)
+* [Build and run the sample](#build-and-run-the-sample)
 * [Additional Resources](#additional-resources)
 * [Technical Support](#technical-support)
 * [Copyrights](#copyrights)
@@ -15,11 +15,14 @@ Entity Framework is a set of technologies in ADO.NET that makes the development 
 
 This sample application shows how to use EF Core with NosDB. This sample uses Northwind as the database to demonstrate the use of EF.
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is executed make sure that:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README.md**.
+- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**
 - Nuget package **NosDB.EntityFrameworkCore.Design** -version **1.0.0.0** should be installed on EFNorthwind project to make the solution compilable.
 
 ### Build and run the sample
@@ -50,4 +53,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

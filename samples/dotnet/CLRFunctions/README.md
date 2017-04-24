@@ -4,8 +4,8 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
-* [Sample CLR Function creation](#sample-CLR-Function-creation)
-* [Build and run the sample](#Build-and-run-the-sample)
+* [Sample CLR Function creation](#sample-clr-function-creation)
+* [Build and run the sample](#cuild-and-run-the-sample)
 * [Additional Resources](#additional-resources)
 * [Technical Support](#technical-support)
 * [Copyrights](#copyrights)
@@ -15,12 +15,15 @@
 NosDB provides users with the flexibility to provide their own custom logic to perform calculations which may be beyond the scope of built-in functions. These user-defined functions (UDFs) are database-level routines which can be used in SELECT queries just like built-in functions for projection and comparison.
 
 A sample program that demonstrates the usage of CLR Functions. The sample CLR Functions used are defined in **NorthwindFunctions** and **EmployeeInfoProvider** class in CLRFunctions project. 
-	
+
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before you can use a CLR UDF in NosDB DQL (Document Query Language), make sure:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README.md**.
+- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
 - App.config have been changed according to the configurations. 
 	- Change database name in connection string (optional).
 	- Change configuration server port if required(optional).
@@ -61,4 +64,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

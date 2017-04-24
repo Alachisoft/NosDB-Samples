@@ -4,7 +4,7 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
-* [Build and run the sample](#Build-and-run-the-sample)
+* [Build and run the sample](#build-and-run-the-sample)
 * [Additional Resources](#additional-resources)
 * [Technical Support](#technical-support)
 * [Copyrights](#copyrights)
@@ -18,11 +18,14 @@ This sample program demonstrates how to perform CRUD operations on a NosDB colle
 
 This sample uses EntityObjects project as a reference for model class "Product".
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is executed make sure that:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README.md**.
+- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
 - Connection string in configuration.js is correct. For example, you need to provide correct database name and password.
 - NosDB Distributor Service (NosDistributorSvc)is running
 
@@ -31,7 +34,7 @@ Before the sample application is executed make sure that:
 Before starting the sample follow these steps:
 1.  Install node.
 2.  Install npm.
-3. 	Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README.md**.
+3. 	Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
 4.  Make sure that all NosDB services are running including Distributor Service (NosDistributorSvc).
 5.  Use "npm install" command to install dependencies for Node.js sample. Make sure that path of dependencies is correct in 'package.json'.
 	
@@ -56,4 +59,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

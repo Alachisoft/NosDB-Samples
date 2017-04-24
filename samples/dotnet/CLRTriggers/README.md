@@ -4,8 +4,8 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
-* [Sample CLR Trigger creation](#sample-CLR-Trigger-creation)
-* [Build and run the sample](#Build-and-run-the-sample)
+* [Sample CLR Trigger creation](#sample-clr-trigger-creation)
+* [Build and run the sample](#build-and-run-the-sample)
 * [Additional Resources](#additional-resources)
 * [Technical Support](#technical-support)
 * [Copyrights](#copyrights)
@@ -16,11 +16,14 @@ CLR Triggers are functions registered against a database operation and are execu
 
 This sample shows how to create and use a trigger. This sample implements NOT NULL constraint for Product's UnitPrice Attribute.
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ## Prerequisites
 
 Before the sample CLR Trigger is affective, make sure:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README.md**.
+- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
 
 ### Sample CLR Trigger creation
 
@@ -54,4 +57,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

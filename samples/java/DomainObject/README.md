@@ -18,6 +18,9 @@ This sample library is a common library used by all samples for domain objects u
 4. OrderDetails
 5. Products
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is used make sure that:
@@ -43,4 +46,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft
+© Copyright 2017 Alachisoft.

@@ -19,6 +19,9 @@ This sample library is a common library used by all samples for entity objects u
 5. OrderDetails
 6. Products
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is used make sure that:
@@ -44,4 +47,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft
+© Copyright 2017 Alachisoft.

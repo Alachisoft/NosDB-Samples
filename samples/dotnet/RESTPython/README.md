@@ -13,6 +13,9 @@
 NosDB doesn't have a Python client yet, but it will be out soon. But it provides an indirect way to use NosDB using REST API.
 This sample communicates with NosDB's REST API to perform CRUD operations on NosDB. It demonstrates the CRUD operation by Inserting, Getting, Updating and Deleting a document from NosDB using standard HTTP methods POST, GET, PUT and DELETE.
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is executed make sure that:
@@ -41,4 +44,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

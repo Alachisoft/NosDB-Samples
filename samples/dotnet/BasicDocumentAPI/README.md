@@ -15,11 +15,14 @@ It shows how to initialize the database instance and Insert, Get, Update and Del
 
 This sample uses EntityObjects project as a reference for model class "Product".
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is executed make sure that:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README.md**.
+- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
 - App.config have been changed according to the configurations. 
 	- Change database name in connection string.(optional)
 	- Change collection name.(optional)
@@ -47,4 +50,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft
+© Copyright 2017 Alachisoft.

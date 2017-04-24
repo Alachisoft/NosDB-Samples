@@ -4,7 +4,7 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#database-name-options)
-* [Running the Northwind.ps1 script](#Running-the-Northwind.ps1-script)
+* [Running the Northwind.ps1 script](#running-the-northwind.ps1-script)
 * [Additional Resources](#additional-resources)
 * [Technical Support](#technical-support)
 * [Copyrights](#copyrights)
@@ -15,6 +15,9 @@ This module contains sample data in JSON format which is supported by NosDB.
 This readme explains how the provided sample data ([InstallDir]\NoSDB\samples\data\json\northwind) can be imported into your configured database to get you started with NosDB features.
 
 The provided "NorthWind.ps1" script contains all steps - creating a database, collections and importing the sample northwind data into them. However, the script file should be tweaked and executed according to your requirements as explained in this document:
+
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
 
 #### Database name options
 
@@ -72,4 +75,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

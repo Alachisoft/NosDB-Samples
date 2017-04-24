@@ -3,10 +3,10 @@
 ### Table of contents
 
 * [Introduction](#introduction)
-* [About NosDB](#About-NosDB)
-* [Using the samples](#Using-the-samples)
-* [Samples by category](#Samples-by-category)
-* [Additional Resources](#Additional-Resources)
+* [About NosDB](#about-nosDB)
+* [Using the samples](#using-the-samples)
+* [Samples by category](#samples-by-category)
+* [Additional Resources](#additional-resources)
 * [Technical Support](#technical-support)
 * [Copyrights](#copyrights)
 
@@ -14,8 +14,8 @@
 
 This repository consists on the source code of sample applications that illusturate the NosDB 2.0 API usage in different langauges and runtimes. The code samples were created in Visual Studio and NetBeans.
 
-<More Content>
-<NoteWithTheZipDownloadLink>
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
 
 ### About NosDB
 
@@ -99,4 +99,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft.

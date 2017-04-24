@@ -4,7 +4,7 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
-* [Build and run the sample](#Build-and-run-the-sample)
+* [Build and run the sample](#build-and-run-the-sample)
 * [Additional Resources](#additional-resources)
 * [Technical Support](#technical-support)
 * [Copyrights](#copyrights)
@@ -16,6 +16,9 @@ NosDB supports REST for network-based applications which are platform and langua
 This sample application demonstrates the usage of REST API capabilities of NosDB and performs CRUD operations on NosDB through it. 
 
 This sample uses EntityObjects project as a reference for model class "Customer".
+
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
 
 ### Prerequisites
 
@@ -48,4 +51,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

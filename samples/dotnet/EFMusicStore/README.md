@@ -13,6 +13,9 @@
 A sample application for using enityframework with music store database
 This sample is a modification of the Microsoft's aspnet MusicStore application
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is executed make sure that:
@@ -51,4 +54,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 Copyright (c) .NET Foundation. All rights reserved. Licensed under the Apache License, Version 2.0
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 

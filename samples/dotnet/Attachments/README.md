@@ -19,11 +19,14 @@ It also demonstrates how to search through the attachments in NosDB, additional 
 
 This sample uses EntityObjects project as a reference for model class "Employee".
 
+> **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
+> [ZIP file](../../archive/master.zip).
+
 ### Prerequisites
 
 Before the sample application is executed make sure that:
 	
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README.md**.
+- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
 - app.config have been changed according to the configurations. 
     - change the database name (optional)
     - change the configuration server port(optional).
@@ -53,4 +56,4 @@ Alachisoft © provides various sources of technical support.
 
 ### Copyrights
 
-© Copyright 2017 Alachisoft 
+© Copyright 2017 Alachisoft. 
