@@ -18,27 +18,6 @@ However, the script file can be tweaked and executed according to your requireme
 > **Note:** If you are unfamiliar with Git and GitHub, you can download the entire collection as a 
 > [ZIP file](https://github.com/Alachisoft/NosDB-Samples/archive/master.zip).
 
-#### Server name option
-
-Provide the IPv4 address or *server-name* in the variable 'server', of the server on which the *database cluster* exists and *configuration server* is running.
-
-Empty value will lead it to connect to the server on which the script is running.
-
-#### StandAlone switch option
-
-Set the 'standalone' variable to true if you intend to connect to a standalone instance of the database cluster.
-
-Unspecified switch will lead it to connect to an instance of a sharded database cluster.
-
-#### Security mode option
-
-Specify 'username' and 'password' in their variables, if the database cluster is using *NosDB Authentication*
-
-Upspecified values will lead it to connect to the database cluster relying on *Windows Authentication*
-
-#### Port value option
-
-Specify the port value on which the *configuration server* is entertaining requests to the 'port' variable. The default value is *9950*.
 
 #### Database name option
 
@@ -54,6 +33,30 @@ If you wish to create the database with the default folder name "northwind", mak
 
 If you wish to provide a custom name, uncomment following line in the script to modify it according to your requirement:
 	`#$DatabaseName ='SampleDatabase';`
+
+#### Connecting to the Database Cluster
+
+In order to 'Northwind.ps1' to work, the Powershell should be connected to a NosDB Database Cluster. The Powershell command "Connect-DatabaseCluster" connects the Powershell to an instance of Database Cluster.
+
+Following is its syntax;
+
+`  Connect-DatabaseCluster [-Server] [-StandAlone]  `
+
+**Arguments**:
+* **Server name option:**
+
+Provide the IPv4 address or *server-name* of the server on which the *database cluster* exists and *configuration server* is running.
+
+Empty value will lead it to connect to the server on which the script is running.
+
+* **StandAlone switch option:**
+
+Specify the 'standalone' switch if you intend to connect to a standalone instance of the database cluster, else it will try to connect to sharded database cluster.
+
+**Examples**:
+* Connect-DatabaseCluster 
+* Connect-DatabaseCluster -Server 200.0.0.4 -StandAlone
+
 
 > **NOTE:** Please refer to the *"Configuring Database Clusters and Shards"* section of *NosDB Administrator's Guide (Power Shell)* for details on *creating* and *connecting* to a database cluster.  
 

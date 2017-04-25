@@ -16,35 +16,6 @@ shippers='"PrimaryKey" : [{"Field":"ShipperID"}]';
 suppliers='"PrimaryKey" : [{"Field":"SupplierID"}]';
 }
 
-$standalone = $TRUE
-$server = ''
-$port = 9950
-$username = ''
-$password = ''
-
-if($standalone)
-{
-    if(($username.Length -gt 0) -and ($password.Length -gt 0))
-	{
-        Connect-DatabaseCluster -Server $server -Port $port -Username $username -Password $password -StandAlone 
-    }
-    else 
-	{
-        Connect-DatabaseCluster -Server $server -Port $port -StandAlone 
-    }
-}
-else
-{
-    if(($username.Length -gt 0) -and ($password.Length -gt 0))
-	{
-        Connect-DatabaseCluster -Server $server -Port $port -Username $username -Password $password
-    }
-    else 
-	{
-        Connect-DatabaseCluster -Server $server -Port $port 
-    }
-}
-
 $paths =  $(Get-Location).Path.Split('\')
 $condition  = ($paths[1] -ne '');
 $conditionConnected = $paths[0] -eq 'NosDB:'

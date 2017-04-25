@@ -32,18 +32,18 @@ The easiest way to use these samples without using Git is to download the zip fi
     
  >   **Note:**  The .NET samples are made using Visual Studio 2015. 
  
-All the sample applications except [*EF Music Store*](samples/dotnet/EFMusicStore) use 'Northwind' database for various operations, which can be easily created and imported data to by the scripts provided in the ['data/json'](data/json) directory.
+All the sample applications except [*EF Music Store*](samples/dotnet/EFMusicStore) use 'Northwind' database for various operations. A PowerShell script "Northwind.ps1" is included in the ['data/json'](data/json) directory which creates the database and imports data into its collections.
 
 ### Samples by category
 ##### CRUD (Create, Read, Update and Delete)
 
-Basic Document API ([.NET](samples/dotnet/BasicDocumentAPI) [JAVA](samples/java/BasicDocumentAPI) [Node.js](samples/nodejs/BasicDocumentAPI))|  Basic Document API Async ([.NET](samples/dotnet/BasicDocumentAPIAsync)) | Attachments ([.NET](samples/dotnet/Attachments) [Node.js](samples/nodejs/Attachments))| 
+Basic Document API ([.NET](samples/dotnet/BasicDocumentAPI) \| [JAVA](samples/java/BasicDocumentAPI)  \| [Node.js](samples/nodejs/BasicDocumentAPI))|  Basic Document API Async ([.NET](samples/dotnet/BasicDocumentAPIAsync)) | Attachments ([.NET](samples/dotnet/Attachments) \| [Node.js](samples/nodejs/Attachments))| 
 |---|---|---|
 
 
 ##### Queries
 
-|Basic SQL Normalized ([.NET](samples/dotnet/BasicSQLNormalized) [Java](samples/java/BasicSQLNormalized) [Node.js](samples/nodejs/BasicSQLNormalized)) |Basic SQL Embedded ([.NET](samples/dotnet/BasicSQLEmbedded) [Java](samples/java/BasicSQLEmbedded) [Node.js](samples/nodejs/BasicSQLEmbedded)) |Joins Nested Queries ([.NET](samples/dotnet/JoinsNestedQueries)) |
+|Basic SQL Normalized ([.NET](samples/dotnet/BasicSQLNormalized) \| [Java](samples/java/BasicSQLNormalized) \| [Node.js](samples/nodejs/BasicSQLNormalized)) |Basic SQL Embedded ([.NET](samples/dotnet/BasicSQLEmbedded) \| [Java](samples/java/BasicSQLEmbedded) \| [Node.js](samples/nodejs/BasicSQLEmbedded)) |Joins Nested Queries ([.NET](samples/dotnet/JoinsNestedQueries)) |
 |---|---|---|
 
 |Basic LINQ ([.NET](samples/dotnet/BasicLINQ)) | 
@@ -58,7 +58,7 @@ Basic Document API ([.NET](samples/dotnet/BasicDocumentAPI) [JAVA](samples/java/
 
 ##### REST
 
-|REST ([.NET](samples/dotnet/RESTDotNet) [Python](samples/dotnet/RESTPython))|
+|REST ([.NET](samples/dotnet/RESTDotNet) \| [Python](samples/dotnet/RESTPython))|
 |---|
 
 
