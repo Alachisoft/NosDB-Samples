@@ -22,7 +22,7 @@ This sample application shows how to use EF Core with NosDB. This sample uses No
 
 Before the sample application is executed make sure that:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**
+- Northwind sample data has been imported as explained in **[BaseDir]\data\json\README&#46;md**
 - Nuget package **NosDB.EntityFrameworkCore.Design** -version **1.0.0.0** should be installed on EFNorthwind project to make the solution compilable.
 
 ### Build and run the sample

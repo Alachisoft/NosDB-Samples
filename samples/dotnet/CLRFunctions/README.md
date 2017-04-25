@@ -23,7 +23,7 @@ A sample program that demonstrates the usage of CLR Functions. The sample CLR Fu
 
 Before you can use a CLR UDF in NosDB DQL (Document Query Language), make sure:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
+- Northwind sample data has been imported as explained in **[[BaseDir]\data\json\README&#46;md**.
 - App.config have been changed according to the configurations. 
 	- Change database name in connection string (optional).
 	- Change configuration server port if required(optional).

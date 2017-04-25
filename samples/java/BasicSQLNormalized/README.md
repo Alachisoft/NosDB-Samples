@@ -23,7 +23,7 @@ This sample uses EntityObjects project as a reference for model class "Product".
 
 Before the sample application is executed make sure that:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
+- Northwind sample data has been imported as explained in **[BaseDir]\data\json\README&#46;md**.
 - Modify the connection string in "src/sample.properties" file according to configurations. e.g., change database name or config server port or security credentials.
 - NosDB Distributor Service is running
 - Build and run the sample.

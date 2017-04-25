@@ -11,7 +11,7 @@
         "email": "support@alachisoft.com"
     },
     "dependencies": {
-        "nosdb": "file:..\\..\\..\\..\\Node.js\\lib\\nosdb-2.0.0.tgz"
+        "nosdb": "^2.0"
     },
     "repository": {
         "private": true

@@ -26,7 +26,7 @@ This sample uses EntityObjects project as a reference for model class "Employee"
 
 Before the sample application is executed make sure that:
 	
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
+- Northwind sample data has been imported as explained in **[BaseDir]\data\json\README&#46;md**.
 - app.config have been changed according to the configurations. 
     - change the database name (optional)
     - change the configuration server port(optional).

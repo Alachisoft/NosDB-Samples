@@ -23,7 +23,7 @@ This sample shows how to create and use a trigger. This sample implements NOT NU
 
 Before the sample CLR Trigger is affective, make sure:
 
-- Northwind sample data has been imported as explained in **[InstallDir]\samples\data\json\README&#46;md**.
+- Northwind sample data has been imported as explained in **[BaseDir]\data\json\README&#46;md**.
 
 ### Sample CLR Trigger creation
 

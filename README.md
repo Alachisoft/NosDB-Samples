@@ -26,54 +26,50 @@ NosDB features and tools are designed to be tuned flexibly into applications of 
 
 ### Using the samples
 
-The easiest way to use these samples without using Git is to download the zip file containing the current version (using the following link or by clicking the "Download ZIP" button on the repo page). You can then unzip the entire archive and use the samples in Visual Studio 2015/2017.
+The easiest way to use these samples without using Git is to download the zip file containing the current version (using the following link or by clicking the "Download ZIP" button on the repository page). You can then unzip the entire archive and use the samples in Visual Studio 2015/2017.
 
 [Download the samples ZIP](../../archive/master.zip)
     
- >   **Note:**  The DotNet samples are made using Visual Studio 2015. 
+ >   **Note:**  The .NET samples are made using Visual Studio 2015. 
+ 
+All the sample applications except [*EF Music Store*](samples/dotnet/EFMusicStore) use 'Northwind' database for various operations, which can be easily created and imported data to by the scripts provided in the ['data/json'](data/json) directory.
 
 ### Samples by category
 ##### CRUD (Create, Read, Update and Delete)
 
-[Basic Document API .NET](samples/dotnet/BasicDocumentAPI)| [Basic Document API JAVA](samples/java/BasicDocumentAPI) | [Basic Document API Node.js](samples/nodejs/BasicDocumentAPI)| 
-|---|---|---|
-
-[Basic Document API Async .NET](samples/dotnet/BasicDocumentAPIAsync) |[Attachments .Net](samples/dotnet/Attachments)| [Attachments Node.js](samples/nodejs/Attachments)| 
+Basic Document API ([.NET](samples/dotnet/BasicDocumentAPI) [JAVA](samples/java/BasicDocumentAPI) [Node.js](samples/nodejs/BasicDocumentAPI))|  Basic Document API Async ([.NET](samples/dotnet/BasicDocumentAPIAsync)) | Attachments ([.NET](samples/dotnet/Attachments) [Node.js](samples/nodejs/Attachments))| 
 |---|---|---|
 
 
 ##### Queries
-|[Basic LINQ .NET](samples/dotnet/BasicLINQ) | [Basic SQL Embedded .NET](samples/dotnet/BasicSQLEmbedded)|[Basic SQL Normalized .NET](samples/dotnet/BasicSQLNormalized)
+
+|Basic SQL Normalized ([.NET](samples/dotnet/BasicSQLNormalized) [Java](samples/java/BasicSQLNormalized) [Node.js](samples/nodejs/BasicSQLNormalized)) |Basic SQL Embedded ([.NET](samples/dotnet/BasicSQLEmbedded) [Java](samples/java/BasicSQLEmbedded) [Node.js](samples/nodejs/BasicSQLEmbedded)) |Joins Nested Queries ([.NET](samples/dotnet/JoinsNestedQueries)) |
 |---|---|---|
 
-[Joins Nested Queries .NET](samples/dotnet/JoinsNestedQueries)|[Basic SQL Embedded Java](samples/java/BasicSQLEmbedded)|[Basic SQL Normalized Java](samples/java/BasicSQLNormalized)|
-|---|---|---|
-
-|[Basic SQL Embedded Node.js](samples/nodejs/BasicSQLEmbedded) | [Basic SQL Normalized Node.js](samples/nodejs/BasicSQLNormalized)|
-|---|---|
-
+|Basic LINQ ([.NET](samples/dotnet/BasicLINQ)) | 
+|---|
 
 
 ##### Entity Framework
 
-|  [EF Music Store](samples/dotnet/EFMusicStore) | [EF Northwind](samples/dotnet/EFNorthwind) |
+| EF Music Store ([.NET](samples/dotnet/EFMusicStore))| EF Northwind ([.NET](samples/dotnet/EFNorthwind)) |
 |---|---|
 
 
 ##### REST
 
-|[REST .NET](samples/dotnet/RESTDotNet)|[REST python](samples/dotnet/RESTPython)|
-|---|---|
+|REST ([.NET](samples/dotnet/RESTDotNet) [Python](samples/dotnet/RESTPython))|
+|---|
 
 
 ##### Miscellaneous
-|[BasicADO .NET](samples/dotnet/BasicADONET)|[Client Side Caching .NET](samples/dotnet/ClientSideCaching)|[CLR Functions .NET](samples/dotnet/CLRFunctions)|
+|BasicADO ([.NET](samples/dotnet/BasicADONET))|Client Side Caching ([.NET](samples/dotnet/ClientSideCaching))|CLR Functions ([.NET](samples/dotnet/CLRFunctions))|
 |---|---|---|
 
-|[CLR Triggers .NET](samples/dotnet/CLRTriggers)|[Entity Objects .NET](samples/dotnet/EntityObjects)|[MapReduce .NET](samples/dotnet/MapReduce)|
+|CLR Triggers ([.NET](samples/dotnet/CLRTriggers))|Entity Objects ([.NET](samples/dotnet/EntityObjects))|MapReduce ([.NET](samples/dotnet/MapReduce))|
 |---|---|---|
 
-|[SQL Dependency .NET](samples/dotnet/SQLDependency)|[Domain Object Java](samples/java/DomainObject)|
+|SQL Dependency ([.NET](samples/dotnet/SQLDependency))|Domain Object ([Java](samples/java/DomainObject))|
 |---|---|
 
 ### Additional Resources

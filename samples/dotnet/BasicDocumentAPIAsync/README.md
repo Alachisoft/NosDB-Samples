@@ -21,7 +21,7 @@ This sample uses EntityObjects project as a reference for model class "Product".
 
 Before the sample application is executed make sure that:
 
-- Northwind sample data has been imported into the collections as explained in **[InstallDir]\samples\data\json\README&#46;md**.
+- Northwind sample data has been imported into the collections as explained in **[BaseDir]\data\json\README&#46;md**.
 - App.config have been changed according to the configurations. 
 	- Change database name in connection string.(optional)
 	- Change collection name.(optional)

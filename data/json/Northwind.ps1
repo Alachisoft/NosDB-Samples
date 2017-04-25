@@ -16,6 +16,35 @@ shippers='"PrimaryKey" : [{"Field":"ShipperID"}]';
 suppliers='"PrimaryKey" : [{"Field":"SupplierID"}]';
 }
 
+$standalone = $TRUE
+$server = ''
+$port = 9950
+$username = ''
+$password = ''
+
+if($standalone)
+{
+    if(($username.Length -gt 0) -and ($password.Length -gt 0))
+	{
+        Connect-DatabaseCluster -Server $server -Port $port -Username $username -Password $password -StandAlone 
+    }
+    else 
+	{
+        Connect-DatabaseCluster -Server $server -Port $port -StandAlone 
+    }
+}
+else
+{
+    if(($username.Length -gt 0) -and ($password.Length -gt 0))
+	{
+        Connect-DatabaseCluster -Server $server -Port $port -Username $username -Password $password
+    }
+    else 
+	{
+        Connect-DatabaseCluster -Server $server -Port $port 
+    }
+}
+
 $paths =  $(Get-Location).Path.Split('\')
 $condition  = ($paths[1] -ne '');
 $conditionConnected = $paths[0] -eq 'NosDB:'
@@ -42,12 +71,13 @@ if($(Get-Location).Path.EndsWith('databases'))
     $Format = 'JSON';
     #------------------------------------------------------------------------------------------------
     $DatabaseContext = $(get-location).Path;
-    $DatabasesName = $databseFolderName;#use folder name as database name or custom name
+    $DatabaseName = $databseFolderName;#use folder name as database name or custom name
+	#$DatabaseName ='SampleDatabase';
 	
     cd -Path $DatabaseContext
     #---------------- Script for creating database, must bhe connected to database cluster ----------
-    Write-Host "Creating database '$DatabasesName' ..."; 
-    $query = ('CREATE DATABASE "' + $DatabasesName + '" ');
+    Write-Host "Creating database '$DatabaseName' ..."; 
+    $query = ('CREATE DATABASE "' + $DatabaseName + '" ');
 	Write-Verbose "Query >> $query";
 	
     Invoke-SQL -Query $query
@@ -56,13 +86,13 @@ if($(Get-Location).Path.EndsWith('databases'))
 
 	Write-Host "";
     #------------------------------------------------------------------------------------------------
-    cd ./$DatabasesName ; 
+    cd ./$DatabaseName ; 
     $FilesName = @(Get-ChildItem -Path $scriptPath/$databseFolderName -Filter *.$Format |% {$_.BaseName});
 
     #---------------- Loop for creating collections, Database must exist before this loop -----------
     foreach($collection in $FilesName)
     {
-        $query2 = ('CREATE COLLECTION "' + $collection + '" {"Database":"' + $DatabasesName +'",'+ $pkHashtable[$collection]+'}');
+        $query2 = ('CREATE COLLECTION "' + $collection + '" {"Database":"' + $DatabaseName +'",'+ $pkHashtable[$collection]+'}');
         Write-Output "CREATING COLLECTION: $collection ...";
         Write-Verbose "Query >> $query2";
 		
@@ -71,13 +101,13 @@ if($(Get-Location).Path.EndsWith('databases'))
 
 	Write-Host "";
     #------------------------------------------------------------------------------------------------
-    cd $DatabaseContext\$DatabasesName'\collections\';
+    cd $DatabaseContext\$DatabaseName'\collections\';
     $junk = dir;
 
     #---------- Loop for importing data in collections, collections must exist before this loop -----
     foreach($collection in $FilesName)
     {
-        cd $DatabaseContext\$DatabasesName'\collections\'$collection;
+        cd $DatabaseContext\$DatabaseName'\collections\'$collection;
         $fullPath = "$scriptPath\$databseFolderName\$collection.$Format";
 	    Write-Host "Importing data into collection '$collection' ...";        
 		Write-Verbose $(get-location).Path;
